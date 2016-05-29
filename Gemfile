@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 # firehose gems
 gem 'rails_12factor', group: :production
+gem 'bootstrap-sass'
+gem 'sprockets'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
