@@ -9,4 +9,49 @@
 
 .navbar {
   border-radius: 0;
+  background-color: #F4F2EE;
+  height: 100px;
+  font-family: 'brandon_grotesquelight', Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  vertical-align: middle;
 }
+
+.navbar-brand {
+  font-family: 'brandon_grotesquemedium', Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#brand {
+  color: #F47D31;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+#brand span {
+  margin-left: -10px;
+}
+
+.navbar-brand img {
+  height: 80px;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+a.navbar-brand {
+  height: 100px;
+}
+
+.navbar-nav {
+  font-size: 20px;
+  top: 40px;
+}
+
+.navbar li {
+  margin: 0px 10px;
+}
+
+.navbar-nav a:hover {
+  text-decoration: underline;
+}
+
+
+
+
