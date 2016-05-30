@@ -37,6 +37,15 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+<% if notice.present? do %>
+  <p class="alert alert-info"><%= notice %></p>
+<% end %>
+
+<% if alert.present? do %>
+  <p class="alert alert-danger"><%= alert %></p>
+<% end %>
+
 <%= yield %>
 
 </body>

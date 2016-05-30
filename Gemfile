@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'rails_12factor', group: :production
 gem 'bootstrap-sass'
 gem 'sprockets'
+gem 'devise'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
