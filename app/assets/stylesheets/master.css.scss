@@ -4,6 +4,10 @@
   clear:both;
 }
 
+body {
+  font-family: 'brandon_grotesquelight', Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6, .navbar {
   margin: 0;
 }
@@ -14,20 +18,20 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 .navbar {
   border-radius: 0;
-  background-color: #F4F2EE;
+  /*background-color: #F4F2EE;*/
   height: 100px;
-  font-family: 'brandon_grotesquelight', Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.navbar-brand {
+.navbar-brand,
+.frosty h1 {
   font-family: 'brandon_grotesquemedium', Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .frosty h1,
 .frosty h2 {
-  font-family: 'brandon_grotesquelight', Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-shadow: rgba(0,0,0, 0.5) 1px 1px;
 }
+
 
 #brand {
   color: #F47D31;
@@ -51,6 +55,7 @@ a.navbar-brand {
 
 .navbar-nav {
   font-size: 20px;
+  position: relative;
   top: 40px;
 }
 
@@ -65,8 +70,8 @@ a.navbar-brand {
 /* hero image */
 
 .hero {
-  background: url("hero.jpeg") no-repeat center center fixed;
-  height: 370px;
+  background: url("hero.jpg") no-repeat center center fixed;
+  height: 650px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -75,8 +80,9 @@ a.navbar-brand {
 
 .frosty {
   color: #fff;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.2);
 }
+
 /*
 .vignette:after {
   -webkit-box-shadow: inset 0px 0px 85px rgba(0,0,0,0.4);
@@ -94,4 +100,6 @@ a.navbar-brand {
   border-color: #F47D81;
   border-radius: 0;
 }
+
+
 
