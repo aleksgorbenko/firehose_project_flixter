@@ -97,8 +97,33 @@ a.navbar-brand {
 
 .btn-success {
   background-color: #F47D31;
-  border-color: #F47D81;
+  border-color: #DC712C;
   border-radius: 0;
+}
+
+.btn-success:hover,
+#sign-up:hover {
+  background-color: #FF712C;
+  border-color: #DC712C;
+}
+
+#sign-up {
+  font-size: 20px;
+  color: #fff;
+}
+
+.booyah-box {
+  background: #fff;
+  border: 1px solid #bebebd;
+  border-radius: 5px;
+  padding: 25px;
+  margin-top: 30px;
+}
+
+.alert-danger,
+.alert-info {
+  border-radius: 0;
+  margin: 0;
 }
 
 

@@ -25,6 +25,8 @@
       </a>
     </div>
 
+
+
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 my-navbar">
       <ul class="nav navbar-nav col-md-4 col-md-offset-2">
@@ -32,17 +34,26 @@
         <li><a href="#">Link</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Log In</a></li>
+
+      <% if !user_signed_in? %>
+          <li> <%= link_to("Sign Up", new_user_registration_path, class: 'btn btn-success', id: 'sign-up') %> </li>
+          <li> <%= link_to("Sign In", new_user_session_path) %> </li>
+      <% else %>
+          <li><%= current_user.email %></li>
+          <li> <%= link_to("Sign Out", destroy_user_session_path, method: :delete) %> </li>
+      <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
-<% if notice.present? do %>
+
+
+<% if notice.present? %>
   <p class="alert alert-info"><%= notice %></p>
 <% end %>
 
-<% if alert.present? do %>
+<% if alert.present? %>
   <p class="alert alert-danger"><%= alert %></p>
 <% end %>
 

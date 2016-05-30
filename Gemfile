@@ -5,6 +5,7 @@ gem 'rails_12factor', group: :production
 gem 'bootstrap-sass'
 gem 'sprockets'
 gem 'devise'
+gem 'simple_form'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
