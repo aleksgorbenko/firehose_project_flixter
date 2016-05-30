@@ -107,6 +107,13 @@ a.navbar-brand {
   border-color: #DC712C;
 }
 
+.btn-success:focus:active,
+.btn-success:active,
+.btn-success:focus {
+  background-color: #999;
+  border-color: #999;
+}
+
 #sign-up {
   font-size: 20px;
   color: #fff;
