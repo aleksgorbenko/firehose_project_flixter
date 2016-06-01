@@ -1,5 +1,6 @@
 class Course < ActiveRecord::Base
   belongs_to :user
+  has_many :sections
 
   validates :title, presence: true, length: { within: 5..40 }
   validates :description, presence: true, length: { within: 100..500 }
