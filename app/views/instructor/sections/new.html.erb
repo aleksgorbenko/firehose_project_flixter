@@ -3,7 +3,7 @@
 
   <h1>Add new section</h1>
 
-  <%= simple_form_for @section, url: instructor_course_sections_path(@course) do |t| %>
+  <%= simple_form_for @section, url: instructor_course_sections_path(current_course) do |t| %>
     <%= t.input :title %>
     <br>
     <%= t.submit "Create Section", class: "btn btn-success" %>
