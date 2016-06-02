@@ -10,7 +10,7 @@ class Instructor::CoursesController < ApplicationController
     if @course.valid?
       redirect_to instructor_course_path(@course)
     else
-      render :new, status: :unprocessable_entity
+      return render :new, status: :unprocessable_entity
     end
 
   end
