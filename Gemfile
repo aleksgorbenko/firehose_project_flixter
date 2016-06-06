@@ -10,6 +10,7 @@ gem 'carrierwave'
 gem 'figaro'
 gem 'fog'
 gem 'mini_magick', '~> 4.3.1'
+gem 'carrierwave-aws'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
