@@ -98,7 +98,6 @@ a.navbar-brand {
 .btn-success {
   background-color: #F47D31;
   border-color: #DC712C;
-  border-radius: 0;
 }
 
 .btn-success:hover,
@@ -164,7 +163,27 @@ a.navbar-brand {
 }
 
 .label-default,
-.btn-danger {
+.btn-danger,
+.btn-primary,
+.btn-success,
+.btn-default {
   border-radius: 0;
+}
+
+.section {
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 20px;
+}
+
+.lesson {
+  background-color: #eee;
+  margin-top: 10px;
+  height: 130px;
+  font-size: 15px;
+}
+
+.lesson b {
+  font-size: 25px;
 }
 
