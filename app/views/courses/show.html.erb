@@ -5,8 +5,20 @@
   <br>
   <%= image_tag @course.image, class: 'img-responsive' %>
 
+  <!-- <%# if flash[:alert] %>
+    <div class="alert alert-danger"><%#= flash[:alert] %></div>
+  <%# end %>-->
+
   <div class="col-xs-12 col-sm-4 text-center">
-    <h3><span class="label label-default"><%= number_to_currency @course.cost %></span></h3>
+    <h3>
+      <span class="label label-default">
+        <% if @course.premium? %>
+          <%= number_to_currency @course.cost %>
+        <% else %>
+          FREE!
+        <% end %>
+      </span>
+    </h3>
 
   <% if current_user && current_user == @course.user %>
     <br>
@@ -20,7 +32,27 @@
       You Are Enrolled!
     </span></h2>
   <% else %>
-    <%= link_to 'Enroll', course_enrollments_path(@course), class: 'btn btn-lg btn-success', method: :post %>
+    <% if @course.free? %>
+      <%= link_to 'Enroll', course_enrollments_path(@course), class: 'btn btn-lg btn-success', method: :post %>
+      <% else %>
+      <!-- stripe payment -->
+        <%= form_tag course_enrollments_path(@course) do %>
+          <article>
+            <% if flash[:error].present? %>
+              <div id="error_explanation">
+                <p><%= flash[:error] %></p>
+              </div>
+            <% end %>
+          </article>
+
+          <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                  data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                  data-description="<%= @course.title %> (<%= number_to_currency @course.cost %>)"
+                  data-amount="<%= (@course.cost * 100).to_i %>"
+                  data-locale="auto"></script>
+        <% end %>
+      <% end %>
+      <!-- stripe payment -->
   <% end %>
   </div>
   <br>
