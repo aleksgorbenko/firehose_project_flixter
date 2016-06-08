@@ -2,8 +2,20 @@
 
 <div class="booyah-box course-box col-xs-12 col-lg-10 col-lg-offset-1">
   <h1><%= current_lesson.title %></h1>
-  <p><%= current_lesson.subtitle %></p>
+  <p class="pull-left">
+    <%= current_lesson.subtitle %>
+  </p>
   <br>
+
+  <% if current_lesson.next_lesson.present? %>
+    <%= link_to lesson_path(current_lesson.next_lesson), class: 'btn btn-success pull-right' do %>
+      Next Lesson &ensp;
+      <i class="glyphicon glyphicon-forward"></i>
+    <% end %>
+  <% end %>
+  <br class="clear">
+  <br>
+
   <video id="my-video" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls preload="auto" width="auto" height="auto"
   poster="/assets/black.jpg" data-setup="{}">
     <source src="<%= current_lesson.video.to_s %>" type='video/mp4'>
