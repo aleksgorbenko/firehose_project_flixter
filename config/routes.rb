@@ -4,6 +4,7 @@ Flixter::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+  resource :dashboard, only: [:show]
   root 'static_pages#index'
   resources :courses, only: [:index, :show] do
     resources :enrollments, only: :create

@@ -1,0 +1,52 @@
+<br>
+<div class="booyah-box course-box col-xs-12 col-lg-10 col-lg-offset-1">
+
+  <h1 class="text-center">My Dashboard</h1>
+  <br>
+  <h4 class="text-center"><%= current_user.email %></h4>
+<br>
+<br>
+  <h2>What I Am Learning</h2>
+  <hr>
+  <br>
+  <br>
+    <% current_user.enrolled_courses.each do |course| %>
+      <h2 class="text-center">
+        <%=link_to course.title, course_path(course) %>
+      </h2>
+      <br>
+      <%= image_tag course.image, class: 'img-responsive course-image' %>
+      <br>
+      <div class="col-xs-12 col-sm-8">
+        <%= course.description %>
+      </div>
+      <div class="col-xs-12 col-sm-4 text-center">
+        <%= link_to "More Info...", course_path(course), class: 'btn btn-success btn-lg pull-right' %>
+      </div>
+      <hr class="col-xs-8 col-xs-offset-2">
+      <br class="clear">
+    <% end %>
+  <br>
+  <br>
+
+  <h2>What I Am Teaching</h2>
+  <hr>
+  <br>
+  <br>
+    <% current_user.courses.each do |course| %>
+      <h2 class="text-center">
+          <%=link_to course.title, course_path(course) %>
+      </h2>
+      <br>
+      <%= image_tag course.image, class: 'img-responsive course-image' %>
+      <br>
+      <div class="col-xs-12 col-sm-8">
+        <%= course.description %>
+      </div>
+      <div class="col-xs-12 col-sm-4 text-center">
+        <%= link_to "More Info...", course_path(course), class: 'btn btn-success btn-lg pull-right' %>
+      </div>
+      <hr class="col-xs-8 col-xs-offset-2">
+      <br class="clear">
+    <% end %>
+</div>
