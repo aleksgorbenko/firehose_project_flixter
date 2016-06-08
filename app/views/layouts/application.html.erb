@@ -86,9 +86,54 @@
 
   <div id="footer">
     <div class="footer">
-      <p>Teachers</p>
-      <br>
-      <%= link_to("Teach a Course", new_instructor_course_path) %>
+      <div class="cols-xs-12 col-sm-3 footer-section">
+        <b>Teachers</b>
+        <br>
+        <br>
+        <%= link_to "Teach a Course", new_instructor_course_path %>
+        <br>
+        <%= link_to dashboard_path do %>
+          My Dashboard (<%= current_user.email %>)
+        <% end %>
+      </div>
+
+      <div class="cols-xs-12 col-sm-3 footer-section">
+        <b>About</b>
+        <br>
+        <br>
+        <%= link_to 'Team', "#" %>
+        <br>
+        <%= link_to 'Careers', "#" %>
+        <br>
+        <%= link_to 'Privacy Policy', "#" %>
+      </div>
+
+      <div class="cols-xs-12 col-sm-3 footer-section">
+        <b>Contact</b>
+        <br>
+        <br>
+        Aleks Gorbenko
+        <br>
+        AleksEdGorbenko@gmail.com
+        <br>
+        London, UK
+      </div>
+
+      <div class="cols-xs-12 col-sm-3 footer-section">
+        <b>Social</b>
+        <br>
+        <br>
+        <%= link_to 'https://github.com/aleksgorbenko' do %>
+          <%= image_tag 'github.png', class: 'social-button' %>
+        <% end %>
+        <%= link_to 'https://uk.linkedin.com/in/seospecialistlondon' do %>
+          <%= image_tag 'linkedin.png', class: 'social-button' %>
+        <% end %>
+        <%= link_to 'https://www.facebook.com/aleksandrgorbenko12' do %>
+          <%= image_tag 'facebook.png', class: 'social-button' %>
+        <% end %>
+      </div>
+
     </div>
   </div>
 
