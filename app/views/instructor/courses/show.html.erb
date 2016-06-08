@@ -9,7 +9,7 @@
 <br class="clear">
 <br>
 <br>
-  <div class="text-cen"><%= link_to "Add a New Section", new_instructor_course_section_path(current_course), class: 'btn btn-success btn-lg' %>
+  <div class="text-center"><%= link_to "Add a New Section", new_instructor_course_section_path(current_course), class: 'btn btn-success btn-lg' %>
   </div>
   <br class="clear">
 
@@ -21,16 +21,31 @@
 
   <ul class="sections">
     <% current_course.sections.rank(:row_order).each do |section| %>
-      <li data-update-url='<%= instructor_section_path(section) %>'>
-        <%= section.title %>
-        <%= link_to "New Lesson", new_instructor_section_lesson_path(section), class: 'btn, btn-primary pull-right btn-xs' %>
+      <li data-update-url='<%= instructor_section_path(section) %>' class="section-li">
+        <div class="header col-xs-12 col-md-10">
+          <i class="glyphicon glyphicon-list"></i>
+          <%= section.title %>
+        </div>
 
-        <ul class="lessons">
+        <%= link_to "New Lesson", new_instructor_section_lesson_path(section), class: 'btn btn-primary pull-right' %>
+        <br class="clear">
+        <br class="clear">
+        <ul class="lessons col-xs-10 col-xs-offset-1">
           <% section.lessons.rank(:row_order).each do |lesson| %>
             <li data-update-url="<%= instructor_lesson_path(lesson) %>">
-              <b><%=lesson.title %></b>
-              -
-              <%= lesson.subtitle %>
+              <div class="col-xs-1">
+              <br>
+                <i class="glyphicon glyphicon-list"></i>
+              </div>
+              <div class="col-xs-11 text-center">
+                <p>
+                  <b><%=lesson.title %></b>
+                </p>
+                <p>
+                  <%= lesson.subtitle %>
+                </p>
+              </div>
+              <br class="clear">
             </li>
           <% end %>
         </ul>
