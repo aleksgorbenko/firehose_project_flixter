@@ -101,7 +101,7 @@ a.navbar-brand {
 }
 
 .btn-success:hover,
-#sign-up:hover {
+#btn-action:hover {
   background-color: #FF712C;
   border-color: #DC712C;
 }
@@ -113,7 +113,7 @@ a.navbar-brand {
   border-color: #999;
 }
 
-#sign-up {
+#btn-action {
   font-size: 20px;
   color: #fff;
 }
@@ -166,7 +166,7 @@ a.navbar-brand {
   margin: 10px;
 }
 
-.label-default,
+.label-success,
 .btn-danger,
 .btn-primary,
 .btn-success,
@@ -192,10 +192,15 @@ a.navbar-brand {
   font-size: 25px;
 }
 
+.course-info {
+  border-right: 4px solid #eee;
+}
+
 /* COURSE PAGE for instructors */
 
 ul {
   list-style-type: none;
+  padding-left: 0;
 }
 
 .lessons {

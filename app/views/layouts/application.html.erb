@@ -22,8 +22,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" id="brand">
-            <!-- <% link_to root_path  %> -->
+          <a href="<% link_to root_path  %>" class="navbar-brand" id="brand">
+            <!--  -->
             <img src="/assets/logo.png">
               <span>FLIXTER.</span>
           </a>
@@ -34,16 +34,18 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 my-navbar">
           <ul class="nav navbar-nav col-md-4 col-md-offset-2">
-            <li class="active">
-              <%= link_to("See All Courses", courses_path) %><span class="sr-only">(current)</span></a>
+            <li>
+              <%= link_to "See All Courses", courses_path %>
             </li>
-            <li><a href="#">Link</a></li>
+            <li>
+              <%= link_to "Teach a Course", new_instructor_course_path, class: 'btn btn-success', id: 'btn-action' %>
+            </li>
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
 
           <% if !user_signed_in? %>
-              <li> <%= link_to("Sign Up", new_user_registration_path, class: 'btn btn-success', id: 'sign-up') %> </li>
+              <li> <%= link_to("Sign Up", new_user_registration_path, class: 'btn btn-success', id: 'btn-action') %> </li>
               <li> <%= link_to("Sign In", new_user_session_path) %> </li>
           <% else %>
               <li>
@@ -92,9 +94,7 @@
         <br>
         <%= link_to "Teach a Course", new_instructor_course_path %>
         <br>
-        <%= link_to dashboard_path do %>
-          My Dashboard (<%= current_user.email %>)
-        <% end %>
+        <%= link_to "My Dashboard", dashboard_path %>
       </div>
 
       <div class="cols-xs-12 col-sm-3 footer-section">
@@ -112,9 +112,9 @@
         <b>Contact</b>
         <br>
         <br>
-        Aleks Gorbenko
+       <a href="https://aleksgorbenko.com">Aleks Gorbenko</a>
         <br>
-        AleksEdGorbenko@gmail.com
+        <a href="mailto:AleksEdGorbenko@gmail.com" target="_top">AleksEdGorbenko@gmail.com</a>
         <br>
         London, UK
       </div>
@@ -133,7 +133,9 @@
           <%= image_tag 'facebook.png', class: 'social-button' %>
         <% end %>
       </div>
-
+      <div class="col-xs-12 text-center copyright">
+        &copy; 2016 Copyright Aleks Gorbenko
+      </div>
     </div>
   </div>
 

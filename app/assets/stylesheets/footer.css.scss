@@ -1,6 +1,6 @@
 /* variables */
-$footer-height: 150px;
-$footer-height-mobile: 500px;
+$footer-height: 160px;
+$footer-height-mobile: 520px;
 
 /* Set the fixed height of the footer here */
 
@@ -54,6 +54,10 @@ body {
 
 .social-button:nth-of-type(1) {
   margin-left: 0;
+}
+.copyright {
+  margin-top: 20px;
+  font-size: 12px;
 }
 
 
