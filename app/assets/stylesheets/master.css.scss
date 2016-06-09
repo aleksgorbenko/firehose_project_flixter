@@ -147,6 +147,7 @@ a.navbar-brand {
 
 .course-image {
   border: 1px solid #ccc;
+  box-shadow: 0px 3px 6px #ccc;
 }
 
 .booyah-box .course-box {
@@ -167,6 +168,7 @@ a.navbar-brand {
 }
 
 .label-success,
+.label-info,
 .btn-danger,
 .btn-primary,
 .btn-success,
@@ -185,15 +187,19 @@ a.navbar-brand {
   background-color: #eee;
   margin-top: 10px;
   height: 130px;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .lesson b {
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .course-info {
   border-right: 4px solid #eee;
+}
+
+.course-info-reverse {
+  border-left: 4px solid #eee;
 }
 
 /* COURSE PAGE for instructors */
