@@ -73,11 +73,12 @@ a.navbar-brand {
 
 .hero {
   background: url("hero.jpg") no-repeat center center fixed;
-  height: 650px;
+  height: 550px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  box-shadow: inset 0 0 40px #444;
 }
 
 .frosty {
@@ -85,17 +86,6 @@ a.navbar-brand {
   background: rgba(0, 0, 0, 0.2);
 }
 
-/*
-.vignette:after {
-  -webkit-box-shadow: inset 0px 0px 85px rgba(0,0,0,0.4);
-  -moz-box-shadow:    inset 0px 0px 85px rgba(0,0,0,0.4);
-  box-shadow:         inset 0px 0px 85px rgba(0,0,0,0.4);
-
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-  content: "";
-}
-*/
 
 .feature-image {
   max-width: 130px;
