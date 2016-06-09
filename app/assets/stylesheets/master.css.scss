@@ -23,7 +23,8 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .navbar-brand,
-.frosty h1 {
+.frosty h1,
+.features h2 {
   font-family: 'brandon_grotesquemedium', Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -33,7 +34,8 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 
-#brand {
+#brand,
+.features h2 {
   color: #F47D31;
   font-size: 24px;
   letter-spacing: 2px;
@@ -94,6 +96,14 @@ a.navbar-brand {
   content: "";
 }
 */
+
+.feature-image {
+  max-width: 130px;
+}
+
+
+
+/*buttons */
 
 .btn-success {
   background-color: #F47D31;
