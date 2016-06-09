@@ -8,27 +8,27 @@
     <h2 class="text-center">
       <%= link_to course.title, course_path(course) %>
     </h2>
-    <br>
+  <br>
     <div class="col-xs-12">
       <%= image_tag course.image, class: 'img-responsive course-image' %>
     </div>
-    <br class="clear">
-    <br>
+  <br class="clear">
+  <br>
 
     <div class="col-sm-8 col-xs-12">
       <h3><%= course.description %></h3>
     </div>
-    <br>
+  <br>
     <div class="col-sm-4 col-xs-12 text-center">
       <%= link_to "More Details...", course_path(course), class: 'btn btn-success btn-lg pull-right' %>
     </div>
-    <br class="clear">
-    <br class="clear">
-    <hr>
-    <br>
-    <br>
-    <br>
-    <br>
+  <br class="clear">
+  <br>
+  <hr>
+  <br>
+  <br>
+  <br>
+  <br>
   <% end %>
 
 </div>

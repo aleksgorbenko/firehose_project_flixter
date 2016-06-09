@@ -1,0 +1,52 @@
+<div id="footer">
+    <div class="footer">
+      <div class="cols-xs-12 col-sm-3 footer-section">
+        <b>Teachers</b>
+        <br>
+        <br>
+        <%= link_to "Teach a Course", new_instructor_course_path %>
+        <br>
+        <%= link_to "My Dashboard", dashboard_path %>
+      </div>
+
+      <div class="cols-xs-12 col-sm-3 footer-section">
+        <b>About</b>
+        <br>
+        <br>
+        <%= link_to 'Team', "#" %>
+        <br>
+        <%= link_to 'Careers', "#" %>
+        <br>
+        <%= link_to 'Privacy Policy', privacy_path %>
+      </div>
+
+      <div class="cols-xs-12 col-sm-3 footer-section">
+        <b>Contact</b>
+        <br>
+        <br>
+       <a href="https://aleksgorbenko.com">Aleks Gorbenko</a>
+        <br>
+        <a href="mailto:AleksEdGorbenko@gmail.com" target="_top">AleksEdGorbenko@gmail.com</a>
+        <br>
+        London, UK
+      </div>
+
+      <div class="cols-xs-12 col-sm-3 footer-section">
+        <b>Social</b>
+        <br>
+        <br>
+        <%= link_to 'https://github.com/aleksgorbenko' do %>
+          <%= image_tag 'github.png', class: 'social-button' %>
+        <% end %>
+        <%= link_to 'https://uk.linkedin.com/in/seospecialistlondon' do %>
+          <%= image_tag 'linkedin.png', class: 'social-button' %>
+        <% end %>
+        <%= link_to 'https://www.facebook.com/aleksandrgorbenko12' do %>
+          <%= image_tag 'facebook.png', class: 'social-button' %>
+        <% end %>
+      </div>
+      <div class="col-xs-12 text-center copyright">
+        &copy; 2016 Copyright Aleks Gorbenko. Built for <a href="https://www.thefirehoseproject.com">The Firehose Project</a>
+      </div>
+    </div>
+  </div>

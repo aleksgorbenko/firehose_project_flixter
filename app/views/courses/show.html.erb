@@ -2,18 +2,14 @@
 <div class="booyah-box course-box col-xs-12 col-lg-10 col-lg-offset-1">
 
   <h1 class="text-center"><%= @course.title %></h1>
-  <br>
+<br>
   <div class="col-xs-12">
     <%= image_tag @course.image, class: 'img-responsive course-image' %>
   </div>
 
-
-  <!-- <%# if flash[:alert] %>
-    <div class="alert alert-danger"><%#= flash[:alert] %></div>
-  <%# end %>-->
-  <br>
-  <br class="clear">
-  <br class="clear">
+<br>
+<br class="clear">
+<br class="clear">
   <div class="col-xs-12 col-sm-3 text-center course-info">
     <h2>
       <span class="label label-info">
@@ -24,8 +20,8 @@
         <% end %>
       </span>
     </h2>
-    <br>
-    <br>
+  <br>
+  <br>
 
   <% if current_user && current_user == @course.user %>
     <%= link_to "Administer", instructor_course_path(@course), class: 'btn btn-danger btn-lg' %>

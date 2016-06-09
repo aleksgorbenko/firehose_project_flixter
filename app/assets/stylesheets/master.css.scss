@@ -1,3 +1,4 @@
+
 /* GLOBAL */
 
 .clear {
@@ -18,7 +19,6 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 .navbar {
   border-radius: 0;
-  /*background-color: #F4F2EE;*/
   height: 100px;
 }
 
@@ -27,12 +27,6 @@ h1, h2, h3, h4, h5, h6, .navbar {
 .features h2 {
   font-family: 'brandon_grotesquemedium', Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
-.frosty h1,
-.frosty h2 {
-  text-shadow: rgba(0,0,0, 0.5) 1px 1px;
-}
-
 
 #brand,
 .features h2 {
@@ -86,14 +80,19 @@ a.navbar-brand {
   background: rgba(0, 0, 0, 0.2);
 }
 
+.frosty h1,
+.frosty h2 {
+  text-shadow: rgba(0,0,0, 0.5) 1px 1px;
+}
+
+
+/* features */
 
 .feature-image {
   max-width: 130px;
 }
 
-
-
-/*buttons */
+/* buttons */
 
 .btn-success {
   background-color: #F47D31;
