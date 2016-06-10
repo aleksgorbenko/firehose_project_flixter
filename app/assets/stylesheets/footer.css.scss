@@ -43,12 +43,16 @@ body {
   text-decoration: underline;
 }
 
+#footer .footer-social a {
+  text-decoration: none;
+}
+
 #footer a:hover {
   color: #333;
 }
 
 .social-button {
-  width: 32px;
+  width: 45px;
   margin: 5px;
 }
 
