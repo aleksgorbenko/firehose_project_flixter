@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 .navbar {
   border-radius: 0;
-  height: 100px;
+  min-height: 120px;
 }
 
 .navbar-brand,
@@ -61,6 +61,15 @@ a.navbar-brand {
 
 .navbar-nav a:hover {
   text-decoration: underline;
+}
+
+.navbar-collapse {
+  height: 250px;
+}
+
+.collapse {
+  position: relative;
+  z-index: 9999;
 }
 
 /* hero image */
