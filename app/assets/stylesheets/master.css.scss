@@ -59,6 +59,10 @@ a.navbar-brand {
   margin: 0px 10px;
 }
 
+.navbar-right li a {
+  font-size: 18px;
+}
+
 .navbar-nav a:hover {
   text-decoration: underline;
 }
@@ -70,6 +74,12 @@ a.navbar-brand {
 .collapse {
   position: relative;
   z-index: 9999;
+}
+
+@media (min-width: 992px) {
+  #brand.navbar-brand {
+    margin-left: 0;
+  }
 }
 
 /* hero image */
