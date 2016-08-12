@@ -1,28 +1,38 @@
-== README
+# Flixter
+[See the Website](https://flixter-aleks-gorbenko.herokuapp.com/)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Two-sided marketplace for online courses. I have chosen the topic of self-development as this is something that I am naturally interested in.
 
-Things you may want to cover:
+## Tech Used:
 
-* Ruby version
+* Ruby/Rails
+* HTML
+* CSS
+* Bootstrap 3
+* jQuery UI
+* AJAX
+* AWS S3
+* Stripe API
+* Git
+* PostGreSQL
 
-* System dependencies
+## Things Learned:
 
-* Configuration
+* jQuery UI drag and drop functionality
+* Implementing payment processing via Stripe API
+* Nested RESTful routes
 
-* Database creation
+## Gems Used:
 
-* Database initialization
+* devise
+* stripe
+* fog
+* ranked-model
+* mini-magick
+* factorygirl
 
-* How to run the test suite
+## Blog Posts About Building Flixter:
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* [https://aleksgorbenko.com/firehose-project-week-5/](https://aleksgorbenko.com/firehose-project-week-5/)
+* [https://aleksgorbenko.com/firehose-project-week-6/](https://aleksgorbenko.com/firehose-project-week-6/)
+* [https://aleksgorbenko.com/firehose-project-week-7/](https://aleksgorbenko.com/firehose-project-week-7/)
